@@ -1,0 +1,108 @@
+.diet-section {
+    padding: 32px;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+/* Text section */
+.tt-section {
+    width: 60%;
+    padding: 0 32px;
+    color: aliceblue;
+}
+
+.tt-headline {
+    margin-bottom: 12px;
+}
+
+.tt-title {
+    width: 500px;
+}
+
+.tt-descritpion {
+    width: 475px;
+    margin: 32px 45px;
+    line-height: 1.6rem;
+}
+
+.tt-appointment-btn {
+    padding: 14px 20px;
+    border-radius: 28px;
+    cursor: pointer;
+}
+
+.tt-stats {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 48px;
+}
+
+.tt-stats-container {
+    text-align: center;
+}
+
+.tt-stats-container > p {
+    margin-bottom: 8px;
+}
+
+/* Image section */
+.diet-image-section {
+    width: 40%;
+    max-width: 100%;
+    text-align: center;
+}
+
+.hero-image1 {
+    width: 100%;
+    height: auto;
+}
+
+/* Scroll Btn */
+.scroll-up {
+    width: 45px;
+    height: 45px;
+    display: none;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-size: 24px;
+    z-index: 20;
+    cursor: pointer;
+}
+
+.show-scroll {
+    display: flex;
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+    .diet-image-section {
+        display: none;
+    }
+    .tt-section {
+        width: 100%;
+        padding: 0;
+    }
+    .tt-title, .tt-descritpion {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .tt-stats {
+        gap: 18px;
+    }
+    .scroll-up {
+        bottom: 32px;
+        right: 32px;
+    }
+}

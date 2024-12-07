@@ -1,0 +1,94 @@
+.dinfo-section {
+    padding: 0 32px;
+    text-align: center;
+    background-color: rgb(5, 3, 3);
+}
+.dinfo-title-content {
+    margin: 64px 0 128px 0;
+}
+.dinfo-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+.dinfo-title > span {
+    position: relative;
+}
+.dinfo-title span::before {
+    content: '';
+    position: absolute;
+    width: 75%;
+    height: 4px;
+    background-color: #9D2553;
+    border-radius: 8px;
+    left: 0;
+    bottom: -12px;
+}
+.dinfo-description {
+    margin: 64px;
+    text-align: center;
+    color: rgb(77, 75, 75);
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    letter-spacing: .8px;
+    line-height: 1.8rem;
+}
+/* Cards */
+.dinfo-cards-content {
+    margin: 64px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    justify-items: center;
+}
+
+.dinfo-cards {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: 2px solid #d7d3d3;
+    border-radius: 12px;
+    background-color: white;
+    position: relative;
+}
+.dinfo-card-title {
+    margin: 32px 0 40px 0;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: .8px;
+}
+.dinfo-card-description {
+    margin: 24px;
+    color: rgb(77, 75, 75);
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    letter-spacing: .8px;
+    line-height: 1.5rem;
+}
+.dinfo-card-icon {
+    position: absolute;
+    top: -24px;
+    left: 44%;
+    padding: 10px;
+    background-color: #DCE6FF;
+    border-radius: 30px;
+}
+.dinfo-fa-icon {
+    color: #2C96FF;
+    font-size: 24px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1000px) {
+    .dinfo-description {
+        margin: 64px 32px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .dinfo-description {
+        margin: 64px 8px;
+    }
+}
